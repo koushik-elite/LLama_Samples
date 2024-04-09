@@ -70,7 +70,7 @@ llm = LlamaCPP(
 # storage_context = StorageContext.from_defaults(vector_store=vector_store)
 
 # # Save documents
-# documents = SimpleDirectoryReader("/mnt/d/Data/athena").load_data()
+# documents = SimpleDirectoryReader("/mnt/d/Data/annabeth").load_data()
 # index = VectorStoreIndex.from_documents(
 #     documents, storage_context=storage_context, embed_model=embed_model
 # )
@@ -82,7 +82,7 @@ llm = LlamaCPP(
 # set up query engine
 # query_engine = index.as_query_engine(llm=llm)
 
-# response = query_engine.query("relation between percy and athena ?")
+# response = query_engine.query("relation between percy and annabeth ?")
 # print(response)
 
 response_iter = llm.stream_complete(prompt)
